@@ -61,16 +61,17 @@ Justifique as camadas utilizadas durante o processo de ingestão até a disponib
       Views = Gold
 
 Observações:
-Notebooks Jupyter - OPCIONAL
-Google Colab - OPCIONAL
-PYTHON e PYSPARK - OBRIGATORIO 
-Disponibilizacao GIT - OBRIGATORIO
-*Pode incluir comentários sobre a abordagem de extração/transformação que você está fazendo*
+	  Notebooks Jupyter - OPCIONAL
+      Google Colab - OPCIONAL
+      PYTHON e PYSPARK - OBRIGATORIO 
+      Disponibilizacao GIT - OBRIGATORIO
+      
+      *Pode incluir comentários sobre a abordagem de extração/transformação que você está fazendo*
 
 
-Questão Bônus!
-Finalmente, este processo deverá ser automatizado usando a ferramenta de orquestração
-de workflow Apache Airflow. Escreva uma DAG para levando em conta as
-características de uso da base. Todos os passos do processo ETL devem ser listados como tasks e orquestrados de forma
-otimizada, porém não é necessário implementar o código chamado em cada uma das tasks.
-Foque em mostrar o fluxo de tasks e as estruturas básicas de uma DAG
+*Questão Bônus*
+	  Finalmente, este processo deverá ser automatizado usando a ferramenta de orquestração
+      de workflow Apache Airflow. Escreva uma DAG para levando em conta as
+      características de uso da base. Todos os passos do processo ETL devem ser listados como tasks e orquestrados de forma
+      otimizada, porém não é necessário implementar o código chamado em cada uma das tasks.
+      Foque em mostrar o fluxo de tasks e as estruturas básicas de uma DAG
