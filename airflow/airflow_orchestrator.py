@@ -38,7 +38,7 @@ silver = "/silver/shell/"
 
 task_vra_silver = BashOperator(
     task_id="vra_silver",
-    bash_command=f"sh {silver}vra_silver.sh",
+    bash_command=f"spark-submit {silver}vra_silver.sh",
     # Pass the parameter date to the script
     env={"date_parameter": data_parametro},
     dag=dag
@@ -47,7 +47,7 @@ task_vra_silver = BashOperator(
 
 task_air_cia_silver = BashOperator(
     task_id="air_cia_silver",
-    bash_command=f"sh {silver}air_cia_silver.sh",
+    bash_command=f"spark-submit {silver}air_cia_silver.sh",
     # Pass the parameter date to the script
     env={"date_parameter": data_parametro},
     dag=dag
@@ -55,7 +55,7 @@ task_air_cia_silver = BashOperator(
 
 task_aerodromos_bronze = BashOperator(
     task_id="aerodromos_bronze",
-    bash_command=f"sh {bronze}aerodromos_bronze.sh",
+    bash_command=f"spark-submit {bronze}aerodromos_bronze.sh",
     # Pass the parameter date to the script
     env={"date_parameter": data_parametro},
     dag=dag
