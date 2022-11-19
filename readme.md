@@ -42,15 +42,15 @@ Para cada aeroporto trazer a companhia aérea com maior atuação no ano com as 
 
 *Extras:*
 
-	Descrever qual estratégia você usaria para ingerir estes dados de forma incremental caso precise capturar esses dados a cada mes?
+Descrever qual estratégia você usaria para ingerir estes dados de forma incremental caso precise capturar esses dados a cada mes?
 	  
 	  Criaria uma coluna com o nome ou a data dos arquivos de origem (os csv e json tem nome com uma parte da data), consultaria no destino qual foi a última carga e subiria a diferença usando append. No caso da API eu consultaria os dados dos novos arquivos, compararia com o log _icao, pegaria os novos e os que fossem iguais a “n encontrado”.
 	
-	Justifique em cada etapa sobre a escalabilidade da tecnologia utilizada.
+Justifique em cada etapa sobre a escalabilidade da tecnologia utilizada.
 	  
 	  Feito o de Pyspark, pois o mesmo trabalha com computação distribuída e isso permite uma escalabilidade
 	  
-	Justifique as camadas utilizadas durante o processo de ingestão até a disponibilização dos dados.
+Justifique as camadas utilizadas durante o processo de ingestão até a disponibilização dos dados.
 	  
 	  Bronze: Dado bruto, sem alterações ou tratativas.
 	  Silver: Dados tratado e normalizados conforme solicitado aplicando regras de negócio.
