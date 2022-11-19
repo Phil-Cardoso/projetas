@@ -76,8 +76,8 @@ Observações
 
 # **Questão Bônus**
 
-	  Finalmente, este processo deverá ser automatizado usando a ferramenta de orquestração
-      de workflow Apache Airflow. Escreva uma DAG para levando em conta as
-      características de uso da base. Todos os passos do processo ETL devem ser listados como tasks e orquestrados de forma
-      otimizada, porém não é necessário implementar o código chamado em cada uma das tasks.
-      Foque em mostrar o fluxo de tasks e as estruturas básicas de uma DAG
+	Finalmente, este processo deverá ser automatizado usando a ferramenta de orquestração
+    de workflow Apache Airflow. Escreva uma DAG para levando em conta as
+    características de uso da base. Todos os passos do processo ETL devem ser listados como tasks e orquestrados de forma
+    otimizada, porém não é necessário implementar o código chamado em cada uma das tasks.
+    Foque em mostrar o fluxo de tasks e as estruturas básicas de uma DAG
