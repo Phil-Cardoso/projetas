@@ -1,5 +1,7 @@
 # Projetas
 
+[código pronto no colab](https://colab.research.google.com/drive/17TG3qnL-Q3OmoRCAWL5BtkcslVqlVBm1?usp=sharing)
+
   A Projetas irá atender um novo cliente, e você será o engenheiro de dados responsável por fazer a ingestão de dados e preparar algumas tabelas para os cientistas de dados e analistas de dados.
 
 *Carregar os dados de VRA*
@@ -39,20 +41,24 @@ Para cada aeroporto trazer a companhia aérea com maior atuação no ano com as 
 	Quantidade total de pousos e decolagens naquele aeroporto
 
 *Extras:*
+
 	Descrever qual estratégia você usaria para ingerir estes dados de forma incremental caso precise capturar esses dados a cada mes?
 	  
-	  - para os dados disponibilizados teria como buscar no nome do arquivo
-	  - para a api, a mesma recebe parametros de query possibilitando tal resultado
+	  Criaria uma coluna com o nome ou a data dos arquivos de origem (os csv e json tem nome com uma parte da data), consultaria no destino qual foi a última carga e subiria a diferença usando append. No caso da API eu consultaria os dados dos novos arquivos, compararia com o log _icao, pegaria os novos e os que fossem iguais a “n encontrado”.
 	
 	Justifique em cada etapa sobre a escalabilidade da tecnologia utilizada.
 	  
-	  - Foi feito uso de Pyspark, pois o mesmo trabalha com computação distribuida nos nós do cluster, com essa informação entramos no que se dita à escalabilidade, pensando em um ambiemte cloud (AWS EMR) poderia se manter habilitado o auto-scaling para spikes no cluster quando nescessário
+	  Feito o de Pyspark, pois o mesmo trabalha com computação distribuída e isso permite uma escalabilidade
 	  
 	Justifique as camadas utilizadas durante o processo de ingestão até a disponibilização dos dados.
 	  
-	  - bronze: dado como ele é, apenas um alteração, salvo como parquet
-	  - silver: limpeza e normalização de dados, bem como criação de regras de negócio
-	  - gold: disponibilização ao usuario final como view, anonimizando dados sensiveis
+	  Bronze: Dado bruto, sem alterações ou tratativas.
+	  Silver: Dados tratado e normalizados conforme solicitado aplicando regras de negócio.
+	  Gold: Dados disponibilizados para os usuários em formato de view, fazendo criptografia em dados sensíveis.
+
+      Arquivos e API = Bronze
+      ELT de VR e AIR_CIA = Silver
+      Views = Gold
 
 Observações:
 Notebooks Jupyter - OPCIONAL
