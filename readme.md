@@ -60,7 +60,8 @@ Justifique as camadas utilizadas durante o processo de ingestão até a disponib
       ELT de VR e AIR_CIA = Silver
       Views = Gold
 
-Observações:
+Observações
+
 	  Notebooks Jupyter - OPCIONAL
       Google Colab - OPCIONAL
       PYTHON e PYSPARK - OBRIGATORIO 
@@ -70,6 +71,7 @@ Observações:
 
 
 *Questão Bônus*
+
 	  Finalmente, este processo deverá ser automatizado usando a ferramenta de orquestração
       de workflow Apache Airflow. Escreva uma DAG para levando em conta as
       características de uso da base. Todos os passos do processo ETL devem ser listados como tasks e orquestrados de forma
