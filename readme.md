@@ -46,33 +46,35 @@ Para cada aeroporto trazer a companhia aérea com maior atuação no ano com as 
 
 Descrever qual estratégia você usaria para ingerir estes dados de forma incremental caso precise capturar esses dados a cada mes?
 	  
-	  Criaria uma coluna com o nome ou a data dos arquivos de origem (os csv e json tem nome com uma parte da data), consultaria no destino qual foi a última carga e subiria a diferença usando append. No caso da API eu consultaria os dados dos novos arquivos, compararia com o log _icao, pegaria os novos e os que fossem iguais a “n encontrado”.
+	Criaria uma coluna com o nome ou a data dos arquivos de origem (os csv e json tem nome com uma parte da data), 
+    consultaria no destino qual foi a última carga e subiria a diferença usando append. No caso da API eu consultaria 
+    os dados dos novos arquivos, compararia com o log _icao, pegaria os novos e os que fossem iguais a “n encontrado”.
 	
 Justifique em cada etapa sobre a escalabilidade da tecnologia utilizada.
 	  
-	  Feito com Pyspark, pois o mesmo trabalha com computação distribuída e isso permite uma escalabilidade
+	Feito com Pyspark, pois o mesmo trabalha com computação distribuída e isso permite uma escalabilidade
 	  
 Justifique as camadas utilizadas durante o processo de ingestão até a disponibilização dos dados.
 	  
-	  Bronze: Dado bruto, sem alterações ou tratativas.
-	  Silver: Dados tratado e normalizados conforme solicitado aplicando regras de negócio.
-	  Gold: Dados disponibilizados para os usuários em formato de view, fazendo criptografia em dados sensíveis.
+	Bronze: Dado bruto, sem alterações ou tratativas.
+	Silver: Dados tratado e normalizados conforme solicitado aplicando regras de negócio.
+	Gold: Dados disponibilizados para os usuários em formato de view, fazendo criptografia em dados sensíveis.
 
-      Arquivos e API = Bronze
-      ELT de VR e AIR_CIA = Silver
-      Views = Gold
+    Arquivos e API = Bronze
+    ELT de VR e AIR_CIA = Silver
+    Views = Gold
 
 Observações
 
-	  Notebooks Jupyter - OPCIONAL
-      Google Colab - OPCIONAL
-      PYTHON e PYSPARK - OBRIGATORIO 
-      Disponibilizacao GIT - OBRIGATORIO
+	Notebooks Jupyter - OPCIONAL
+    Google Colab - OPCIONAL
+    PYTHON e PYSPARK - OBRIGATORIO 
+    Disponibilizacao GIT - OBRIGATORIO
       
-      *Pode incluir comentários sobre a abordagem de extração/transformação que você está fazendo*
+    *Pode incluir comentários sobre a abordagem de extração/transformação que você está fazendo*
 
 
-*Questão Bônus*
+# **Questão Bônus**
 
 	  Finalmente, este processo deverá ser automatizado usando a ferramenta de orquestração
       de workflow Apache Airflow. Escreva uma DAG para levando em conta as
