@@ -1,0 +1,1 @@
+python bronze/script/aerodromos_bronze.py

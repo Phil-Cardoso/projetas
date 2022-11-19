@@ -1,0 +1,1 @@
+python silver/script/air_cia_silver.py
