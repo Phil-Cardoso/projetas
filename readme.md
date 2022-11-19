@@ -50,7 +50,7 @@ Descrever qual estratégia você usaria para ingerir estes dados de forma increm
 	
 Justifique em cada etapa sobre a escalabilidade da tecnologia utilizada.
 	  
-	  Feito o de Pyspark, pois o mesmo trabalha com computação distribuída e isso permite uma escalabilidade
+	  Feito com Pyspark, pois o mesmo trabalha com computação distribuída e isso permite uma escalabilidade
 	  
 Justifique as camadas utilizadas durante o processo de ingestão até a disponibilização dos dados.
 	  
