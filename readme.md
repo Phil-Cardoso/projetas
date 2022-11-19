@@ -21,9 +21,10 @@
 	Salvar estes dados
 
 *Criar as seguintes views*
+**Priorize o uso de SQL para esta parte**
 
-	(Priorize o uso de SQL para esta parte):
-	Para cada companhia aérea trazer a rota(origem-destino) mais utilizada com as seguintes informações:
+Para cada companhia aérea trazer a rota(origem-destino) mais utilizada com as seguintes informações:
+
 		Razão social da companhia aérea
 		Nome Aeroporto de Origem
 		ICAO do aeroporto de origem
@@ -33,12 +34,13 @@
 		Estado/UF do aeroporto de destino
 
 Para cada aeroporto trazer a companhia aérea com maior atuação no ano com as seguintes informações:
-	Nome do Aeroporto
-	ICAO do Aeroporto
-	Razão social da Companhia Aérea
-	Quantidade de Rotas à partir daquele aeroporto
-	Quantidade de Rotas com destino àquele aeroporto
-	Quantidade total de pousos e decolagens naquele aeroporto
+
+		Nome do Aeroporto
+        ICAO do Aeroporto
+        Razão social da Companhia Aérea
+        Quantidade de Rotas à partir daquele aeroporto
+        Quantidade de Rotas com destino àquele aeroporto
+        Quantidade total de pousos e decolagens naquele aeroporto	
 
 *Extras:*
 
