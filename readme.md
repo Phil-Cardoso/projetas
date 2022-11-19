@@ -1,6 +1,6 @@
 # Projetas
 
-[código pronto no colab](https://colab.research.google.com/drive/17TG3qnL-Q3OmoRCAWL5BtkcslVqlVBm1?usp=sharing)
+[Código no google colab](https://colab.research.google.com/drive/17TG3qnL-Q3OmoRCAWL5BtkcslVqlVBm1?usp=sharing)
 
   A Projetas irá atender um novo cliente, e você será o engenheiro de dados responsável por fazer a ingestão de dados e preparar algumas tabelas para os cientistas de dados e analistas de dados.
 
