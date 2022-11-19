@@ -21,7 +21,7 @@
 	Salvar estes dados
 
 *Criar as seguintes views*
-**Priorize o uso de SQL para esta parte**
+(**Priorize o uso de SQL para esta parte**)
 
 Para cada companhia aérea trazer a rota(origem-destino) mais utilizada com as seguintes informações:
 
