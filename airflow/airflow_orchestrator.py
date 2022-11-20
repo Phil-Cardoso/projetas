@@ -6,11 +6,11 @@ from datetime import datetime, timedelta
 # ===============================================================================
 
 # Criando parametro de data para rodar a dag
-ontem = datetime.today() - timedelta(days=1)
+data_exec = datetime.today() - timedelta(days=1)
 
 # formato: YYYYM
-ano = ontem.strftime("%Y")
-mes = str(int(ontem.strftime("%m")))
+ano = data_exec.strftime("%Y")
+mes = str(int(data_exec.strftime("%m")))
 data_parametro = ano + mes
 
 # ===============================================================================
