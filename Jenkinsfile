@@ -3,7 +3,13 @@ pipeline {
     options {
         buildDiscarder(logRotator(numToKeepStr: '5'))
     }
-    srages {
-        stage('Scan')
+    stages {
+        stage('Scan') {
+            steps {
+                withSonarQubeEnv(installationName: 'sq1') {
+                    sh './mvnw clean sonar:sonar'
+                }
+            }
+        }
     }
 }
