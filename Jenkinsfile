@@ -4,8 +4,8 @@
           stage("build & SonarQube analysis") {
             agent any
             steps {
-              withSonarQubeEnv('installationName:' 'SonarQube') {
-                sh './mvnw clean package sonar:sonar'
+              withSonarQubeEnv('installationName:' 'sq1') {
+                sh './mvnw clean sonar:sonar'
               }
             }
           }
