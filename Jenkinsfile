@@ -1,11 +1,14 @@
 pipeline {
-    agent any
-
+    agent { label 'linux'}
+    options{
+        bluidDiscarder(logRotator(numToKeepStr: '5'))
+    }
     stages {
-
-        stage('clonar git') {
+        stage('Scan') {
             steps{
-                git url: 'https://github.com/Phil-Cardoso/projetas.git', branch: 'master'
+                withSonarQubeEnv(installationName: 'SonarQube') {
+                    sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
+                }
             }
         }
     }
