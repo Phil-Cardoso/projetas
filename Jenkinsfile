@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Inicial') {
-            steps {
-                echo 'Teste de pipeline'
+
+        stage('clonar git') {
+            steps{
+                git url: 'https://github.com/Phil-Cardoso/projetas.git', branch: 'master'
             }
         }
     }
