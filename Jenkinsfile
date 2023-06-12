@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Scan') {
             steps {
-                withSonarQubeEnv(installationName: 'sq1', credentialsId: 'sq1') {
+                withSonarQubeEnv(installationName: 'sq1') {
                     sh './gradlew sonarqube'
                 }
             }
