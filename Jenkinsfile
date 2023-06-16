@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo ls
+                echo 'python3 loop_teste.py'
             }
         }
     }
