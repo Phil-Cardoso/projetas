@@ -1,15 +1,10 @@
 pipeline {
     agent any
-    options {
-        buildDiscarder(logRotator(numToKeepStr: '5'))
-    }
+    
     stages {
-        stage('Scan') {
+        stage{'Clonar_git'} {
             steps {
-                withSonarQubeEnv(installationName: 'sq1') {
-                    // sh './gradlew sonarqube'
-                }
+                echo "teste"
             }
         }
     }
-}
