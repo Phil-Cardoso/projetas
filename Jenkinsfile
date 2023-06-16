@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Clonar_git') {
+        stage('Build') {
             steps {
-                echo 'teste'
+                echo ls
             }
         }
     }
